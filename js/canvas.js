@@ -17,7 +17,13 @@ const calcSize = () => {
 const sandbox = new GlslCanvas(canvas);
 sandbox.load(frag)
 
-const textures = ["trails.jpg", "light.jpg", "imag3190.jpg", "distress.jpeg"]
+const textures = ["trails.jpg", "light.jpg", "distress.jpeg"]
+// // preload images
+// const textureUrls = textures.map(tex => {
+//   const img = document.createElement('img')
+//   img.src = URL.createObjectURL(tex)
+// })
+
 let current = 0
 
 const setTexture = () => {
