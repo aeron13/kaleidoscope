@@ -17,7 +17,7 @@ const calcSize = () => {
 const sandbox = new GlslCanvas(canvas);
 sandbox.load(frag)
 
-const textures = ["/images/trails.jpg", "/images/light.jpg", "/images/distress.jpeg"]
+const textures = ["images/trails.jpg", "images/light.jpg", "images/distress.jpeg"]
 let current = 0
 
 const setTexture = () => {
