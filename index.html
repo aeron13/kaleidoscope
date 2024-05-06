@@ -13,15 +13,17 @@
 		<div class="canvas-holder">
 		  <canvas></canvas>
 		</div>
-		
-		<div class="form-container">
-			<button class="action-btn">+</button>
-			<form class="load-form">
-				<input id="image" type="file" name="image" />
-				<p class="error hidden">The file must be a image in JPEG or PNG format.</p>
-				<input type="submit" value="load" disabled />
-			</form>
-		</div>
+		<main>
+			<div class="form-container">
+				<button class="action-btn">+</button>
+				<form class="load-form">
+					<input id="image" type="file" name="image" />
+					<p class="error hidden">The file must be a image in JPEG or PNG format.</p>
+					<input type="submit" value="load" disabled />
+				</form>
+			</div>
+		</main>
+
 
 		<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 		<script src="./js/frag.js"></script>
