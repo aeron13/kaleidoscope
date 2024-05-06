@@ -67,6 +67,12 @@ main {
   padding: 10px;
 }
 
+@media (min-width: 450px) {
+  main {
+    justify-content: center;
+  }
+}
+
 .form-container {
   position: relative;
   background-color:  white;
@@ -74,13 +80,13 @@ main {
   transform: translate(0, 0);
   width: 2em;
   height: 2em;
+  max-width: 450px;
   border-radius: 5px;
   transition: all var(--animation-duration);
 }
 
 .form-container.visible {
   height: 180px;
-  max-width: 450px;
   top: 50%;
   width: 100%;
   transform: translate(0, -50%);
