@@ -61,6 +61,7 @@ main {
   width: 100%;
   display: flex;
   top: 0;
+  left: 0;
   flex-wrap: wrap;
   justify-content: end;
   padding: 10px;
