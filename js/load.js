@@ -1,3 +1,5 @@
+const container = document.querySelector('.form-container')
+const toggleButton = container.querySelector('.action-btn')
 const form = document.querySelector('form.load-form')
 const input = form.querySelector("#image")
 const submit = form.querySelector("input[type=submit]")
@@ -16,6 +18,10 @@ const validate = file => {
     submit.disabled = false
   	return true
 }
+
+toggleButton.addEventListener('click', () => {
+  container.classList.toggle('visible')
+})
 
 input.addEventListener('change', () => {
   validate(input.files[0])
