@@ -37,6 +37,8 @@ form.addEventListener('submit', event => {
     const img = document.createElement("img");
     img.src = URL.createObjectURL(selectedFile);
     sandbox.setUniform("trails", img.src);
+    form.reset()
+    submit.disabled = true
   }
 
 })
