@@ -65,6 +65,7 @@ main {
   flex-wrap: wrap;
   justify-content: end;
   padding: 10px;
+  pointer-events: none;
 }
 
 @media (min-width: 450px) {
@@ -74,6 +75,7 @@ main {
 }
 
 .form-container {
+  pointer-events: all;
   position: relative;
   background-color:  white;
   top: 0;
